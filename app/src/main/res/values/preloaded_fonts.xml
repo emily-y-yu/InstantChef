@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/antic</item>
+        <item>@font/bad_script</item>
+        <item>@font/calligraffitti</item>
+        <item>@font/dancing_script_bold</item>
+        <item>@font/kreon</item>
+    </array>
+</resources>

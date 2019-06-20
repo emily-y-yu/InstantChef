@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/welcomeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:textColor="#0D1321"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/kreon" />
+
+    <TextView
+        android:id="@+id/welcome2Label"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="What will you be cooking up today?"
+        android:textColor="#0D1321"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:fontFamily="@font/kreon" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/platter" />
+
+    <Button
+        android:id="@+id/randomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5"
+        android:background="#C5D86D"
+        android:text="Click me for a random recipe!" />
+
+</LinearLayout>

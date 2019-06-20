@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchFragment">
+
+    <TextView
+        android:id="@+id/searchRecipeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Search Recipes"
+        android:textColor="#0D1321"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/kreon" />
+
+    <TextView
+        android:id="@+id/searchInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="InstantChef makes it super easy for you to search for recipes. If the ingredients in your digital pantry make up at least 80% of the ingredients needed for an individual recipe, then that recipe will appear in your search results. Happy cooking!"
+        android:textColor="#0D1321"
+        android:textSize="18sp"
+        app:fontFamily="@font/kreon" />
+
+    <TextView
+        android:id="@+id/cuisineSearchLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Cuisine"
+        android:textColor="#0D1321"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/kreon" />
+
+    <Spinner
+        android:id="@+id/cuisineSearchSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/cuisine" />
+
+    <TextView
+        android:id="@+id/categorySearchLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Category"
+        android:textColor="#0D1321"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/kreon" />
+
+    <Spinner
+        android:id="@+id/categorySearchSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/category" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#C5D86D"
+        android:text="Search for Recipes" />
+</LinearLayout>

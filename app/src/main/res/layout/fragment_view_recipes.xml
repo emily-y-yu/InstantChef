@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewRecipesFragment">
+
+    <LinearLayout
+        android:id="@+id/topRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recipeBankLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Recipe Bank"
+            android:textColor="#0D1321"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/kreon" />
+
+        <TextView
+            android:id="@+id/recipeBankInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="All of your favorited recipes will appear here."
+            android:textColor="#0D1321"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:fontFamily="@font/kreon" />
+
+        <Button
+            android:id="@+id/createRecipeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#C5D86D"
+            android:text="Create Recipe"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recipesList"
+        android:layout_width="match_parent"
+        android:layout_height="589dp"
+        android:layout_below="@id/topRecipes"
+        android:choiceMode="singleChoice"
+        android:fillViewport="true"
+        android:listSelector="#dbdbdb"
+        android:nestedScrollingEnabled="true">
+
+    </ListView>
+
+</RelativeLayout>
